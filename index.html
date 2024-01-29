@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Checker</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Check Current Url</h1>
+
+    <div style="text-align: center;">
+
+        <button
+            style="border: 2px solid rgb(164, 90, 187); border-radius: 5px; background-color: rgb(164, 90, 187); color: white;"
+            onclick="check()">Get Current Url</button>
+
+        <p id="ans"></p>
+    </div>
+
+    <script>
+
+        function check() {
+
+            document.getElementById("ans").innerHTML =
+                 window.location.href;
+
+
+
+        }
+
+    </script>
+</body>
+
+</html>
